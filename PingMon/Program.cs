@@ -22,10 +22,13 @@ class Program
     {
         if (args != null && args.Count() > 0)
         {
+            List<string> tmpList = new List<string>();
             foreach (string arg in args)
             {
-                Console.WriteLine(arg);
+                tmpList.Add(arg);
+                //Console.WriteLine(arg);
             }
+            addresses = tmpList.ToArray();
         }
         List<Task<PingReply>> pingTasks = new List<Task<PingReply>>();
 

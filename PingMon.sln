@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7FE8CD14-EFF0-4038-B152-49BCE1529F9E}"
 	ProjectSection(SolutionItems) = preProject
 		readme.md = readme.md
+		..\..\..\Pictures\Screen Snips\2024-08\WindowsTerminal_GKhN6YCEpd.jpg = ..\..\..\Pictures\Screen Snips\2024-08\WindowsTerminal_GKhN6YCEpd.jpg
 	EndProjectSection
 EndProject
 Global

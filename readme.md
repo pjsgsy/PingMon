@@ -8,4 +8,5 @@ Also shows the number of lost responses and a graphical bar indicating response 
 
 Add your default hosts to monitor in the code, or supply a list of hostnames on startup.
 
+![Alt text](WindowsTerminal_GKhN6YCEpd.jpg)
 

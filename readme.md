@@ -8,5 +8,9 @@ Also shows the number of lost responses and a graphical bar indicating response 
 
 Add your default hosts to monitor in the code, or supply a list of hostnames on startup.
 
+For example
+
+./pingmon.exe 192.168.2.1 192.168.2.43
+
 ![Alt text](WindowsTerminal_GKhN6YCEpd.jpg)
 

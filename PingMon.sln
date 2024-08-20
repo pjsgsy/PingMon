@@ -11,6 +11,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		WindowsTerminal_GKhN6YCEpd.jpg = WindowsTerminal_GKhN6YCEpd.jpg
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binaries", "Binaries", "{7A6B46E0-5C8E-49FE-ABBC-17D2BF3F6FC1}"
+	ProjectSection(SolutionItems) = preProject
+		PingMon\bin\Release\net8.0\PingMon.deps.json = PingMon\bin\Release\net8.0\PingMon.deps.json
+		PingMon\bin\Release\net8.0\PingMon.dll = PingMon\bin\Release\net8.0\PingMon.dll
+		PingMon\bin\Release\net8.0\PingMon.exe = PingMon\bin\Release\net8.0\PingMon.exe
+		PingMon\bin\Release\net8.0\PingMon.pdb = PingMon\bin\Release\net8.0\PingMon.pdb
+		PingMon\bin\Release\net8.0\PingMon.runtimeconfig.json = PingMon\bin\Release\net8.0\PingMon.runtimeconfig.json
+		PingMon\bin\Release\net8.0\Spectre.Console.dll = PingMon\bin\Release\net8.0\Spectre.Console.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +34,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7A6B46E0-5C8E-49FE-ABBC-17D2BF3F6FC1} = {7FE8CD14-EFF0-4038-B152-49BCE1529F9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {638F1DF1-C2CA-4851-AEB5-975C90AD85A6}

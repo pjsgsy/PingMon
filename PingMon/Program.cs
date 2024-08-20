@@ -20,6 +20,13 @@ class Program
     public static Response[] Responses = new Response[addresses.Length];
     static void Main(string[] args)
     {
+        if (args != null && args.Count() > 0)
+        {
+            foreach (string arg in args)
+            {
+                Console.WriteLine(arg);
+            }
+        }
         List<Task<PingReply>> pingTasks = new List<Task<PingReply>>();
 
         Console.WriteLine("PingMon V1.0 (C) Paul J Smith - @pjsmith");
@@ -75,11 +82,11 @@ class Program
                     else
                     {
                         pt = pingTask.Result.RoundtripTime;
-                        if (Responses[i].min == 0) Responses[i].min = pt;
-                        Responses[i].min = Responses[i].avg.Min();
-                        if (Responses[i].max == 0) Responses[i].max = pt;
-                        Responses[i].max = Responses[i].avg.Max();
                         Responses[i].avg.Enqueue(pt);
+                        Responses[i].min = pt;
+                        Responses[i].min = Responses[i].avg.Min();
+                        Responses[i].max = Responses[i].avg.Max();
+                        Responses[i].max = pt;
                     }
                         int avg = (int)Responses[i].avg.Average();
                     //pingTask.Result is whatever type T was declared in PingAsync
@@ -116,7 +123,7 @@ class Program
         Console.WriteLine("Stopped");
     }
 
-    public static double GetVariance(Queue<long> numbers)
+    private static double GetVariance(Queue<long> numbers)
     {
         int count = numbers.Count;
         if (count == 0)

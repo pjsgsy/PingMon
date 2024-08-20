@@ -16,3 +16,6 @@ For example
 
 Written over a the course of a few cups of coffee today, so, may still contain bugs, etc!
 
+I have added binaries, so you can download and run this without comiling, etc. Find them in the PingMon/PingMon/bin/Release
+/net8.0 folder
+
